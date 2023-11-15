@@ -1,0 +1,9 @@
+SELECT 
+    Region, 
+    SUM(TotalAmount) AS TotalSales
+FROM 
+    Orders
+JOIN 
+    Customers ON Orders.CustomerID = Customers.CustomerID
+GROUP BY 
+    Region;
