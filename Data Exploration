@@ -1,0 +1,5 @@
+-- List all tables
+SHOW TABLES;
+
+-- Describe a specific table 
+DESCRIBE Orders;
