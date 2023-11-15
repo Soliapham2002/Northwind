@@ -1,0 +1,9 @@
+SELECT 
+    OrderDate, 
+    SUM(TotalAmount) AS TotalSales
+FROM 
+    Orders
+GROUP BY 
+    OrderDate
+ORDER BY 
+    OrderDate;
