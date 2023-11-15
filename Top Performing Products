@@ -1,0 +1,12 @@
+SELECT 
+    ProductName, 
+    SUM(Quantity) AS TotalQuantitySold
+FROM 
+    OrderDetails
+JOIN 
+    Products ON OrderDetails.ProductID = Products.ProductID
+GROUP BY 
+    ProductName
+ORDER BY 
+    TotalQuantitySold DESC
+LIMIT 10;
