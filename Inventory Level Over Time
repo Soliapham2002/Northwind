@@ -1,0 +1,9 @@
+SELECT 
+    ProductName, 
+    SUM(Quantity) AS TotalQuantity
+FROM 
+    Products
+JOIN 
+    Inventory ON Products.ProductID = Inventory.ProductID
+GROUP BY 
+    ProductName;
